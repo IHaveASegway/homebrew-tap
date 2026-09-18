@@ -5,21 +5,21 @@
 class Gitops < Formula
   desc "Mass git operations across many repos, with a TUI and one-command org cloning"
   homepage "https://github.com/IHaveASegway/gitops"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.0/gitops_1.2.0_darwin_amd64.tar.gz"
-      sha256 "8a57816fcd6dfaec318aba6bc44b6f82d1273c8ebca58e154845f76eeee980a5"
+      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.1/gitops_1.2.1_darwin_amd64.tar.gz"
+      sha256 "d1d3ac39e1db555d015876b4f9508f7b8e4a3a44a4065fc9e10e4b3eb0d72752"
 
       define_method(:install) do
         bin.install "gitops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.0/gitops_1.2.0_darwin_arm64.tar.gz"
-      sha256 "aba73f1eed0ecefd7d09ae924869384991bd190ef9b1e1f4d14b38a406f50ce7"
+      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.1/gitops_1.2.1_darwin_arm64.tar.gz"
+      sha256 "1f525ca00fce24917f349030c1a335c934ec26e4f46ada6130e0e9ba57a30f30"
 
       define_method(:install) do
         bin.install "gitops"
@@ -29,15 +29,15 @@ class Gitops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.0/gitops_1.2.0_linux_amd64.tar.gz"
-      sha256 "4ba30072b311044b095e4b2760892f6ad45b8a461fa4c36da9b3782e7eafcca5"
+      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.1/gitops_1.2.1_linux_amd64.tar.gz"
+      sha256 "4debf97401e3f39c1b36a7018a6e9cc77faf5ea51ca9b816dfaff1407f86835c"
       define_method(:install) do
         bin.install "gitops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.0/gitops_1.2.0_linux_arm64.tar.gz"
-      sha256 "676d6bf13d6f563d373ce6a7090252ac53f91830290122e5e839ba8a6bda9761"
+      url "https://github.com/IHaveASegway/gitops/releases/download/v1.2.1/gitops_1.2.1_linux_arm64.tar.gz"
+      sha256 "6e7935585cd75a3d5fa5752fec029003dbb83391fa831e050f063a5b8f83de5d"
       define_method(:install) do
         bin.install "gitops"
       end
