@@ -2,12 +2,8 @@
 
 Homebrew tap for [IHaveASegway](https://github.com/IHaveASegway)'s tools.
 
-```bash
-brew install IHaveASegway/tap/gitops
-```
+No formulae are published here at the moment.
 
-| Package | What it is |
-|---------|------------|
-| [`gitops`](https://github.com/IHaveASegway/gitops) | Mass git operations across many repositories, with a TUI and one-command GitHub org cloning |
+`gitops` was published here through version 1.2.2 and is no longer distributed. An existing install keeps working, and `brew uninstall gitops` removes it.
 
-Casks in this tap are generated and pushed by [GoReleaser](https://goreleaser.com) when a release is tagged in the source repository — do not edit them by hand. Upgrade with `brew upgrade gitops`.
+Formulae in this tap are generated and pushed by [GoReleaser](https://goreleaser.com) when a release is tagged in the source repository, so do not edit them by hand.
